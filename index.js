@@ -6,7 +6,7 @@ document.querySelector('.score').textContent= 10;
 document.querySelector('.guess').value= 8;*/
 
 let number =Math.trunc(Math.random()*20)+1;
-let score = 20;
+let score = 25;
 let highscore = 0;
 document.querySelector('.check').addEventListener('click', function(){
     const guess= Number(document.querySelector('.guess').value)
@@ -44,3 +44,4 @@ document.querySelector('.again').addEventListener('click', function(){
     document.querySelector('.guess').value='';
     document.querySelector('.number').style.width='15rem'
 })
+
